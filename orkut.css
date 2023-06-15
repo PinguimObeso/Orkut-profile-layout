@@ -1,0 +1,356 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: rgb(171, 226, 208);
+}
+
+/*<!------------------------------------ HEADER -------------------------------------->*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: radial-gradient(  rgb(62, 206, 122), rgb(27, 190, 95), rgb(27, 97, 56) ) ;  
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.banner{
+    width: 85px;
+    margin-right: 45px;
+    padding-left: 50px;
+}
+.nav-links, .nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-links ul li{
+    display: inline-block;
+}
+
+.lupa{
+    width: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.lupa:hover{
+    background-color: rgb(22, 77, 45);
+    border-radius: 20px;
+}
+
+.barra-pesquisa{
+    margin-left: 20px;
+    padding-right: 20px;
+    background: white;
+    width: 160px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 7px 7px;
+    outline: none;
+    border: 0;
+    box-shadow: 1px 3px 3px rgb(23, 105, 57);
+    height: 25px;
+    padding-top: 10px;
+    color: white;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    padding-bottom: 15px;
+}
+.sair{
+    margin-left: 400px;
+}
+nav div{
+    padding: 3px;
+}
+
+/*<!------------------------------------ FIM HEADER -------------------------------------->*/
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+.sidebar-esquerda{
+    background: white;
+    flex-basis: 17%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    border-radius: 7px;
+}
+
+
+/*<!------------------------------------ SIDEBAR ESQUERDA -------------------------------------->*/
+
+.foto-perfil{
+    width: 80%;
+    margin-left: 7px;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+h4{
+    color: rgb(27, 190, 95);
+    margin-left: 12px;
+}
+.paragrafos{
+    color: gray;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.editar img{
+    width: 20px;
+    margin-left: 15px;
+    margin-right: 7px;
+}
+.editar a{
+    text-decoration: none;
+    color: rgb(27, 190, 95);
+    padding-bottom: 5px;
+}
+.editar{
+    margin-bottom: 10px;
+    margin-top: 10px;
+   
+}
+li a img{
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 20px;
+}
+div li a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+}
+.sidebar-esquerda li{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1.5px solid rgb(156, 156, 156);
+    background-color: rgb(235, 255, 248);
+}
+.conf{
+    margin-bottom: 20px;
+}
+
+/*<!------------------------------------ SIDEBAR DIREITA -------------------------------------->*/
+.sidebar-direita {
+    background: white;
+    flex-basis: 35%;
+    position: sticky;
+    top: 70px;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.sidebar-direita h2{
+    margin-top: 12px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+.friends img{
+    width: 80px;
+    height: 80px;
+    float:center;	
+    display: inline-flex;
+    margin: 4px 4px 4px;
+    z-index: 6;
+    overflow: hidden;
+}
+.friends{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 10px 50px 10px;
+    height: 100px;
+    margin-top: 2px;
+}
+.friends-ind{
+    display: inline;
+    height: 130px;
+    width: 90px;
+    margin: 0px 5px 0px;
+    background-color: rgb(197, 245, 228) ;
+    text-align: center;
+}
+.friends-ind p{
+    color: gray;
+}
+.sidebar-direita p{
+    font-size: 13px;
+}
+.verde{
+    color: rgb(27, 190, 95);
+    text-decoration: underline;
+    margin-left: 12px;
+    margin-top: 10px;
+    padding: 5px 0 5px 0;
+}
+.sidebar-direita button{
+    margin-left: 20px;
+    color: rgb(27, 190, 95);
+    width: 80px;
+    border:none;
+    box-shadow: 1px 1px 1.5px 1.5px rgb(156, 156, 156);
+    border-radius: 3px;
+    margin-top: 10px;
+    height: 15px;
+    font-size: 12px;
+    cursor: pointer;
+} 
+/*<!------------------------------------ SIDEBAR COMUNIDADES -------------------------------------->*/
+
+div .title-comun{
+    font-size: 25px;
+    padding-right: 70px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+} 
+.comunidades{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 15px 0 15px;
+    height: 160px;
+    margin-top: 2px;
+    position: sticky;
+}
+.comunidades-ind p{
+    color: gray;
+}
+.comunidades-ind{
+    display: inline;
+    height: 140px;
+    width: 90px;
+    margin: 0px 5px 7px;
+    background-color: rgb(197, 245, 228) ;
+    text-align: center;
+}
+.comunidades-ind img{
+    width: 80px;
+    height: 80px;
+    float:center;	
+    display: inline-flex;
+    margin: 4px 4px 2px;
+    z-index: 6;
+    overflow: hidden;
+}
+
+/*<!------------------------------------ MAIN CONTENT -------------------------------------->*/
+
+.container-center{
+    align-items: center;
+    margin: 0px 15px 0px 15px;
+}
+.main-content{
+    background: white;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    flex-direction:column;
+    flex-basis: 50%;
+    border-radius: 7px 50px 7px 7px;
+    height: 240px;
+    margin-bottom: 12px;
+    position: sticky;
+}
+.bemvindo{
+    color: black;
+    padding: 12px 0 12px 12px;
+    font-size: 28px;
+}
+.main-content img{
+    width: 18px;
+    justify-content: space-between;
+}
+.icon-name{
+    color: rgb(156, 156, 156);
+    justify-content: space-between;
+    margin-left: 5px;
+}
+small{
+    color: transparent;
+}
+.recados{
+    margin-left: 15px;
+}
+.fotos{
+    margin-left: 15px;
+}
+.videos{
+    margin-left: 15px;
+}
+.fas{
+    margin-left: 35px;
+}
+.mensagens{
+    margin-left: 28px;
+}
+.main{
+    margin-top: 20px;
+    margin-bottom: 5px ;
+    color: black;
+}
+.main-main{
+    color: gray;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 100px;
+}
+/*<!------------------------------------ DEPOIMENTOS -------------------------------------->*/
+.main-depoimentos h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.main-depoimentos{
+    background: white;
+    float: left;
+    align-self: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction:column;
+    flex-basis: 42%;
+    border-radius: 7px;
+}
+.main-depoimentos .post{
+    width: 70%;
+    margin-left: 50px;
+}
+.main-depoimentos .perfil-foto-icone{
+    width: 40px;
+    border-radius: 50%;
+}
+.data{
+    color: gray;
+    font-size: 12px;
+}
+.legenda{
+    margin-left: 70px;
+    color: black;
+}
+.neliza{
+    color: rgb(27, 190, 95);
+    font-size: 20px;
+    bottom: 30px;
+}
+.post{
+    margin-bottom: 15px;
+}
+
